@@ -1,0 +1,22 @@
+.partners {
+    background-color: #f7f9fa;
+    padding: 30px 20px;
+    .partners__box {
+        display: flex;
+        justify-content: center;
+        .partners__box-content {
+            h3 {
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 1.35;
+                text-align: center;
+            }
+            .logo-item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 16px;
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+// Helper->Ưu tiên khai báo đầu tiên
+@import './Helper/variables';
+@import './Helper/mixin';
+
+
+//Header
+@import './Layouts/header';
+@import './Layouts/slider';
+@import './Layouts/footer';
+@import './Layouts/adminuser';
+@import './Layouts/login';
+@import './Layouts/register';
+@import './Layouts/tabs';
+@import './Layouts/intro';
+@import './Layouts/headline';
+@import './Layouts/trends';
+@import './Layouts/topcategory';
+@import './Layouts/topiccategory';
+@import './Layouts/nonstudent';
+@import './Layouts/partners';
+@import './Layouts/course/coursedetail';
+@import './Layouts/course/slidemenu';
+@import './Layouts/course/willlearn';
+@import './Layouts/course/scrollnarbar';
+@import './Layouts/course/coursecontent';
+@import './Layouts/course/trainer';
+@import './Layouts/course/comments';
+@import './Layouts/course/opinion';
+@import './Layouts/checkout/checkout';
+@import './Layouts/search/search';
+@import './Layouts/courses/courses';
+
+

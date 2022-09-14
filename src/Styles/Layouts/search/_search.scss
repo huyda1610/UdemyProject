@@ -1,0 +1,77 @@
+.search-course {
+    margin-top: 15px;
+    .search-sourse__none {
+        display: block;
+        height: 300px;
+        margin-top: 50px;
+        p:nth-child(1) {
+            color: #000;
+            font-size: 19px;
+            font-weight: 700;
+        }
+        p:nth-child(2) {
+            color: #000;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        ul {
+            li {
+                list-style: circle;
+            }
+        }
+    }
+    .search-course__content {
+        h1 {
+            font-size: 30px;
+            font-weight: 700;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #cdcdcd;
+        }
+        .search-course__content-item {
+            border-style: groove;
+            margin-top: 20px;
+            .search-course__item-img {
+                img {
+                    width: 250px;
+                    height: 150px;
+                }
+            }
+            .search-course__item-thread {
+                a {
+                    h5 {
+                        font-weight: 700;
+                        font-size: 16px;
+                        color: #000;
+                    }
+                }
+                .desciption {
+                    font-size: 14px;
+                    color: #6a6f73;
+                    margin-bottom: 5px;
+                }
+                .star {
+                    color: #b4690e;
+                    display: flex;
+                    align-items: center;
+                    .icon-star {
+                        margin-right: 2px;
+                    }
+                    span {
+                        margin-right: 2px;
+                        color: #b4690e;
+                    }
+                    .view {
+                        margin-left: 2px;
+                        margin-right: 2px;
+                        color: #6a6f73;
+                    }
+                }
+                .total {
+                    font-size: 12px;
+                    color: #6a6f73;
+                }
+              
+            }
+        }
+    }
+}

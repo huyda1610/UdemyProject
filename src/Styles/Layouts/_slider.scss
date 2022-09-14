@@ -1,0 +1,65 @@
+.slider {
+    position: relative;
+    .slider-form-search {
+        position: absolute;
+        background-color:#fff;
+        top: 20%;
+        left: 65px;
+        width: 400px;
+        padding: 20px;
+        color: #1c1d1f;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+        h1 {
+            font-weight: 700;
+        }
+        p {
+            font-weight: 400;
+
+        }
+        form {
+            position: relative;
+            input {
+                border-radius: unset;
+                color:#495057;
+                border: 1px solid #1c1d1f;
+            }
+            button {
+                position: absolute;
+                right: 0;
+                top: 0;
+                &:focus {
+                    box-shadow: unset;
+                }
+            }
+        }
+    }
+}
+@include responsive("large"){
+    .slider {
+        .slider-form-search {
+            width: 350px;
+            height: 220px;
+            top: 6%;
+            padding: 10px;
+            left: 17px;
+            h1 {
+                font-size: 32px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+@include responsive("medium"){
+    .slider {
+        .slider-form-search {
+            position: unset;
+            height: 165px;
+            width: 100%;
+        }
+    }
+}
+@include responsive("small"){
+    
+}

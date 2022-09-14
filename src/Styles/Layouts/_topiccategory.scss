@@ -1,0 +1,83 @@
+.topic-category {
+    width: 100%;
+    background-color: #f7f9fa;
+    padding: 50px 0px;
+    margin-top: 50px;
+    .topic-category__content {
+        h2 {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+        .topic-category__list {
+            .row {
+                padding: 0;
+                margin: 0;
+                .col-md-3, .col-6 { 
+                }
+            }
+            .topic-category__item {
+                h2 {
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                }
+                ul {
+                    padding: 0;
+                    li {
+                        padding: 10px 0px;
+                        a {
+                            font-size: 16px;
+                            font-weight: 700;
+                            color: #5624d0;
+                            text-decoration: underline !important;
+                            &:hover {
+                                color: #401b9c;
+                            }
+                        }  
+                        p {
+                            font-size: 14px;
+                            color: #6a6f73;
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+            }
+        }
+        .button-more {
+            color: #1c1d1f;
+            text-decoration: none !important;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 10px 10px;
+            margin-left: 17px;
+            border: 1px solid rgb(26, 24, 24);
+            &:hover {
+                color: #1c1d1f;
+                background-color: #edeff0;
+            }
+        }
+    }
+}
+@include responsive("extra-large"){
+    .topic-category {
+        padding: 50px 20px;
+    }
+}
+@include responsive("large"){
+   
+ }
+@include responsive("medium"){
+    .topic-category {
+        .topic-category__content {
+            .button-more {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}
+@include responsive("small"){
+    
+}

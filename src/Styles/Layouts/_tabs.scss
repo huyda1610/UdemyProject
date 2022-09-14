@@ -1,0 +1,130 @@
+
+// tabs
+a {
+    .card {
+        border: unset;
+        padding: 0px 5px;
+        img {
+            display: block;
+            width: 240px;
+            height: 150px;
+            object-fit: cover;
+            border: 1px solid #cdcdcd;
+            border-radius: unset;
+        }
+        .card-body {
+            padding: 5px;
+            .card-title {
+                color: #1c1d1f;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 1.2;
+                height: 30px;
+            }
+            .card-text {
+                font-size: 12px;
+                font-weight: 400;
+                color: #6a6f73;
+                margin: 0;
+            }
+            .rating {
+                align-items: center;
+                .rating__score {
+                    color: #b4690e;
+                    margin-right: 5px;
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+                .rating__star {
+                    i {
+                        color: #e59819;
+                        font-size: 12px;
+                    }
+                }
+                .rating__view {
+                    color: #6a6f73;
+                    font-size: 12px;
+                    font-weight: 400;
+                    margin-left: 5px;
+                }
+            }
+            .price {
+                .price__old {
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: #1c1d1f;
+                    margin-right: 7px;
+                }
+                .price__new {
+                    color: #6a6f73;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+.active {
+    color: #1c1d1f !important;
+    background-color: #fff !important;
+    border-color: #dee2e6 #dee2e6 #fff !important;
+}
+.tabs {
+    margin-bottom: 20px;
+    .nav-tabs {
+        border: unset;
+        .nav-item {
+            .nav-link {
+                border: unset;
+                color: #6a6f73; 
+                font-weight: 500;
+                cursor: pointer;
+                padding: 15px 15px 15px 0px;
+                
+                &:hover {
+                    // color: #1c1d1f;
+                    background-color:unset;
+                }
+                
+            }
+        }
+    }
+    .tab-content {
+        position: relative;
+        margin-top: 10px;
+        border: 1px solid #cdcdcd;
+        padding: 30px;
+        height: 320px;
+        .slick-next, .slick-prev {
+            position: absolute;
+            right: -15px;
+            top: 27%;
+            display: block;
+            z-index: 10;
+            width: 40px;
+            height: 40px;
+            border-radius: 50% !important;
+            background-color: #1c1d1f !important;
+            border: 1px solid #6a6f73 !important;
+            box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+        }
+        .slick-prev {
+            left: -15px;
+        }
+    }
+}
+// end tabs
+@include responsive("extra-large"){
+    .tabs {
+        padding: 0px 20px;
+    }
+}
+@include responsive("large"){
+   
+ }
+@include responsive("medium"){
+   
+}
+@include responsive("small"){
+    
+}

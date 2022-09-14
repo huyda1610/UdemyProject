@@ -1,0 +1,134 @@
+.courses {
+    margin-bottom: 50px;
+    .courses__content {
+        .courses-menu {
+            background-color: #fff;
+            box-shadow: 1px 4px 12px #cdcdcd;
+            padding: 15px 0px;
+            border-top: 1px solid #cdcdcd;
+            ul {
+                display: flex;
+                margin: 0px;
+                padding: 0px;
+                li {
+                    margin-right: 20px;
+                    a {
+                        color: #1c1d1f;
+                        &.active {
+                            color: #000;
+                            font-weight: 700;
+                        }
+                    }
+
+                }
+            }
+        }
+        .courses__content-list {
+            margin-top: 40px;
+            h1 {
+                font-size: 32px;
+                font-weight: 700;
+            }
+            p {
+                font-size: 24px;
+                font-weight: 700;
+            }
+            .courses__content-item {
+                position: relative;
+                .courses__item-img {
+                    a {
+                        img {
+                            width: 100% !important;
+                            height: 180px;
+                        }
+                    }
+                }
+                .courses__item-thread {
+                    >a {
+                        display: block;
+                        height: 40px;
+                        h5 {
+                            font-size: 16px;
+                            font-weight: 700;
+                            color: #000;
+                        }
+                    }
+                    .desciption {
+                        font-size: 12px;
+                        color: #6a6f73;
+                        overflow: hidden;
+                        margin-bottom: 0px;
+                    }
+                    .star {
+                        display: flex;
+                        align-items: center;
+                        color: #b4690e;
+                        font-size: 14px;
+                        span {
+                            margin-right: 2px;
+                        }
+                    }
+                    .total {
+                        font-size: 16px;
+                    }
+                    .courses-add-to-cart {
+                        display: none;
+                        width: 100%;
+                        position: absolute;
+                        top: 0;
+                        z-index: 10;
+                        background-color: #fff;
+                        padding: 20px 20px;
+                        box-shadow: 1px 4px 8px #cdcdcd;
+                        a {
+                            h3 {
+                                font-size: 19px;
+                                color: #000;
+                                font-weight: 700;
+                            }
+                        } 
+                        .date {
+                            color: #1e6055;
+                            font-weight: 400;
+                            font-size: 14px;
+                            span {
+                                font-weight: 700;
+                            }
+                        }
+                        .mota {
+                            font-size: 14px;
+                            color: #6a6f73;
+                            font-weight: 400;
+                        }
+                        button {
+                            border: unset;
+                            background-color: #a435f0;
+                            width: 100%;
+                            padding: 10px 0px;
+                            color: #fff;
+                            font-weight: 700;
+                        }
+                    }
+                }
+                &:hover {
+                    .courses-add-to-cart {
+                        display: block;
+                    }
+                }
+            }
+        }
+       
+    }
+}
+@include responsive("extra-large"){
+  
+}
+@include responsive("large"){
+  
+}
+@include responsive("medium"){
+  
+}
+@include responsive("small"){
+  
+}

@@ -1,0 +1,27 @@
+.trends {
+    margin-bottom: 50px;
+    padding: 0px 20px;
+    h2 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+    .trends__content {
+        .trends__item {
+            padding: 0px 5px;
+        }
+    }
+}
+@include responsive("extra-large"){
+
+}
+@include responsive("large"){
+   
+ }
+@include responsive("medium"){
+   
+}
+@include responsive("small"){
+    
+}

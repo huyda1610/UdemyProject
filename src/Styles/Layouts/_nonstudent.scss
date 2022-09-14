@@ -1,0 +1,84 @@
+.non-student-one, .non-student-two, .non-student-three {
+    display: none;
+}
+.show-non {
+    display: block !important;
+}
+.non-student {
+    padding: 50px;
+    .non-student-box {
+        width: 90%;
+        margin: auto;
+        .non-student__content {
+            display: flex;
+            align-items: center;
+            .non-student__content-image {
+                flex: 1;
+                margin-right: 50px;
+                img {
+                    display: block;
+                   height: 400px;
+                   width: 400px;
+                }
+            }
+            .non-student__content-info {
+                flex: 1;
+                padding: 0px 20px;
+                .info-header {
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 1.25;
+                }
+                .info-content {
+                    font-size: 19px;
+                    font-weight: 400;
+                    line-height: 1.4;
+                    margin-bottom: 25px;
+                }
+                .info-link {
+                    padding: 15px 10px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    background-color: #1c1d1f;
+                    color: #fff;
+                    &:hover {
+                        background-color: #000;
+                    }
+                }
+            }
+        }
+    }
+   
+}
+@include responsive("extra-large"){
+
+}
+@include responsive("large"){
+    .non-student {
+        .non-student-box {
+            .non-student__content {
+                display: unset;
+                .non-student__content-image { 
+                    img {
+                        display: block;
+                        width: 400px;
+                        height: 400px;
+                        margin: 0px auto 50px;
+                    }
+                }
+            }
+            .non-student__content-info {
+                width: 90%;
+                margin: auto;
+                text-align: center;
+            }
+        }
+       
+    }
+ }
+@include responsive("medium"){
+   
+}
+@include responsive("small"){
+    
+}

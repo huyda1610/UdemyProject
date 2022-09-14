@@ -1,0 +1,32 @@
+.headline {
+    padding: 40px 0px;
+    .headline__main-text {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 1.25;
+    }
+    .headline__sub-text {
+        line-height: 1.4;
+        margin-top: 5px;
+        font-size: 19px;
+        font-weight: 400;
+    }
+}
+@include responsive("extra-large"){
+    .headline {
+        padding: 20px;
+    }
+ }
+ @include responsive("large"){
+    .headlin {
+        .headline__main-text {
+            font-size: 24px;
+        }
+    }
+  }
+ @include responsive("medium"){
+    
+ }
+ @include responsive("small"){
+     
+ }

@@ -1,0 +1,32 @@
+@mixin text ($color, $fs, $fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin button ($color, $bg-color, $fw, $bg-color-hover, $border-color) {
+    color: $color;
+    font-weight: $fw;
+    background-color: $bg-color;
+    border: 1px solid $border-color;
+    &:hover {
+        background-color: $bg-color-hover;
+        color: $color;
+    }
+}
+
+
+@mixin responsive($screen) {
+    //lấy giá trị dựa vào tên màn hình
+    //kiểm tra giá tên màn hình có hợp lệ không => kiểm tra tên có tồn tại trong biến $breakpoints
+    @if(map-has-key($map: $breakpoints, $key: $screen )){
+        //hợp lệ
+        //$value chứa kích thước màn hình lấy được
+        $value: map-get($map: $breakpoints , $key: $screen );
+        @media screen and (max-width:$value){
+            @content;
+        }
+    }@else{
+        @warn "Màn hình không tồn tại";
+    }
+}

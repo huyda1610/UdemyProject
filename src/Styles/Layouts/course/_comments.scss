@@ -1,0 +1,137 @@
+.comments {
+    margin-top: 30px;
+    .conments-content {
+        .comments-content__title {
+            h2 {
+                font-size: 19px;
+                font-weight: 700;
+            }
+        }
+        .comments-content__rating {
+            display: flex;
+            align-items: center;
+            .comments-content__rating-left {
+                padding-right: 20px;
+                height: 100%;
+                color: #b4690e;
+                .left-box {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .left-box-item {
+                        p {
+                            font-size: 64px;
+                            font-weight: 700;
+                            margin-bottom: 0px;
+                        }
+                        .icon-rating {
+                            color: #e59819;
+                        }
+                        span {
+                            font-weight: 700;
+                            font-size: 14px;
+                        }
+                    }
+                    
+                }
+                
+            }
+            .comments-content__rating-right {
+                flex: 1;
+                ul {
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        display: flex;
+                        align-items: center;
+                        padding: 3px 0;
+                        margin: 0;
+                        button {
+                            align-items: center;
+                            background-color: transparent;
+                            border: 0;
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: nowrap; 
+                            padding: 0;
+                            width: 65%;
+                           
+                            .level {
+                                width: 100%;
+                                display: flex;
+                                padding: 4px 0px;
+                                z-index: 5;
+                                background-color: #dcdacb;
+                                position: relative;
+                                .level-percent {
+                                    position: absolute;
+                                    display: inline-block;
+                                    top: 0;
+                                    left: 0;
+                                    width: 66%;
+                                    height: 100%;
+                                    z-index: 10;
+                                    background-color: #6a6f73;
+                                }
+                            }
+                        }
+                        .rate-star {
+                            width: 35%;
+                            font-size: 16px;
+                            color: #eb8a2f;
+                            display: flex;
+                            align-items: center;
+                            margin-left: 15px;
+                            .rates-star-icon {
+                                margin-right: 4px;
+                            }
+                            .percent {
+                                margin-left: 10px;
+                                p {
+                                    font-size: 16px;
+                                    margin-bottom: 0px;
+                                }
+                            }
+                        }
+                        &:nth-child(2) {
+                            button {
+                                .level {
+                                    .level-percent {
+                                        width: 29%;
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(3) {
+                            button {
+                                .level {
+                                    .level-percent {
+                                        width: 4%;
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(4) {
+                            button {
+                                .level {
+                                    .level-percent {
+                                        width: 0%;
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(5) {
+                            button {
+                                .level {
+                                    .level-percent {
+                                        width: 0%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

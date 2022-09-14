@@ -1,0 +1,212 @@
+// Helper 
+
+// End Helper
+.course__detail { 
+    position: relative;
+    .course__detail-top {
+        padding: 20px 0px;
+        position: relative;
+        background-color:#1c1d1f;
+        .course__detail-top-content {
+            color: #fff;
+            line-height: 1.5;
+            h1 {
+                font-size: 32px;
+                font-weight: 700;
+            }
+            .description {
+                font-size: 19px;
+            }
+            .course__detail-star {
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                .star {
+                    color:#e59819;
+                    font-size: 12px; 
+                    font-weight: 700;
+                    span {
+                        margin-right: 5px;
+                    } 
+                }
+                .number {
+                    color: #cec0fc;
+                    margin: 0px 5px;
+                    text-decoration: underline;
+                }  
+            }
+            .create {
+                font-size: 14px;
+                padding: 5px 0px;
+                a {
+                    color: #cec0fc;
+                    text-decoration: underline;
+                }
+            }
+            .update {
+                font-size: 14px;
+            }
+            .shared {
+                margin-top: 20px;
+                a {
+                    padding: 10px;
+                    color: #fff;
+                    border: 1px solid #fff;
+                    margin-right: 10px;
+                }
+            }
+        }
+        .course__detail-top-sidebar {
+            position: absolute;
+            top: 1%;
+            width: 320px;
+            z-index: 3;
+            background-color: #fff;
+            box-shadow: 0px 2px 4px rgb(0 0 0 / 30%), 0px 4px 12px rgb(0 0 0 / 30%);
+            &.scroll {
+                position: fixed !important;
+                top: 2%;
+                opacity: 1;
+                animation: fadeIn ease-in 0.3s forwards;
+                .sidebar-box {
+                    .course-info {
+                        .image {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .sidebar-box {
+                width: 100%;
+                .course-info {    
+                    .image {
+                        img {
+                            width: 100%;
+                            height: 200px;
+                        }
+                    }
+                    .thread {
+                        margin-top: 20px;
+                        padding: 0px 15px;
+                        .price {
+                            font-size: 32px;
+                            font-weight: 700;
+                        }
+                        .btn-addcart {
+                            width: 100%;
+                            display: block;
+                            padding: 10px 0px;
+                            text-align: center;
+                            color: #fff;
+                            border: unset;
+                            font-weight: 700;
+                            background-color: #a435f0;
+                        }
+                        .btn-buy {
+                            width: 100%;
+                            margin-top: 10px;
+                            display: block;
+                            background-color: #fff;
+                            text-align: center;
+                            padding: 10px 0px;
+                            color: #000;
+                            font-weight: 700;
+                            border: 1px solid #000;
+                        }
+                        .dayoff {
+                            margin-top: 15px;
+                            text-align: center;
+                            font-size: 12px;
+                            line-height: 1.4;
+                            color: #1c1d1f;
+                        }
+                    }
+                    
+                }
+                .course-detail {
+                    padding: 0px 15px;
+                    .title {
+                        font-size: 16px;
+                        font-weight: 700;
+                    }
+                    p {
+                        font-size: 14px;
+                        margin-bottom: 0px;
+                        line-height: 2;
+                        span {
+                            margin-left: 15px;
+                        }
+                    }
+                    a {
+                        display: block;
+                        width: 100;
+                        font-size: 14px;
+                        font-weight: 700;
+                        text-decoration: underline;
+                        text-align: center;
+                        padding-top: 15px;
+                        padding-bottom: 35px;
+                        border-bottom: 1px solid #cdcdcd;
+                    }
+                }
+                .training {
+                    padding: 10px 15px;
+                    h5 {
+                        font-size: 20px;
+                        font-weight: 700;
+                    }
+                    p {
+                        font-size: 14px;
+                        margin-bottom: 5px;
+                    }
+                    a {
+                        display: block;
+                        width: 100%;
+                        border: 1px solid #000;
+                        font-weight: 700;
+                        font-size: 14px;
+                        color: #000;
+                        text-align: center;
+                        padding: 10px 0px;
+                    }
+                }
+            }
+        } 
+    }
+    
+}
+@include responsive("extra-large"){
+  
+}
+@include responsive("large"){
+    .course__detail {
+        .course__detail-top {
+            .course__detail-top-sidebar {
+                margin-top: 30px;
+                position: unset !important;
+                width: 100%;
+                animation: unset;
+                background-color: #1c1d1f;
+                top: unset !important;
+                color: #fff;
+                &.scroll {
+                    position: unset !important;
+                }
+                .sidebar-box {
+                    .course-info {
+                        .image {
+                            display: block !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+   
+}
+@include responsive("medium"){
+  
+}
+@include responsive("small"){
+  
+}
